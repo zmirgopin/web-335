@@ -1,3 +1,7 @@
+#	Title: gopin_usersp1.py
+#   Author: Zahava Gopin
+#   Date: 24 April 2023
+#   Description: Connecting python queries to MongoDB collection. 
 from pymongo import MongoClient
 
 client = MongoClient("mongodb+srv://web335_user:s3cret@bellevueuniversity.r06aetm.mongodb.net/web335DBretryWrites=true&w=majority")
@@ -10,7 +14,7 @@ collection= db.users
 documents = collection.find()
 print(documents)
 # Find the document with the specified id
-employee= collection.find_one({'employeeId': 1011})
+employee= collection.find_one({'employeeId': '1011'})
 # Print the document
 print(employee)
 # Find the document with the specified name
