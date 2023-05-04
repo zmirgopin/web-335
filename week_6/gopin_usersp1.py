@@ -8,7 +8,7 @@ client = MongoClient("mongodb+srv://web335_user:s3cret@bellevueuniversity.r06aet
 
 print(client)
 # Access the desired database and collection
-db= client.web335DB
+db= client['web335DB']
 collection= db.users
 # Find all documents in the collection
 documents = collection.find()
